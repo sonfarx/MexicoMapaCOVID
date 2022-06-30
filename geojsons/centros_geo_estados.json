@@ -1,0 +1,41 @@
+{
+  "centros":
+	[ 
+	  {"id": 0, "nombre":"Estados Unidos Mexicanos", "centro": [-102.5527878, 23.6345005], "zoom": 5.4},
+	  {"id": 1, "nombre":"Aguascalientes", "centro": [-102.3565, 22.04], "zoom":9.9},
+	  {"id": 2, "nombre":"Baja California", "centro": [-115.7135, 30.3588], "zoom":7.3},
+	  {"id": 3, "nombre":"Baja California Sur", "centro": [-112.3065, 25.4156], "zoom":7.26},
+	  {"id": 4, "nombre":"Campeche", "centro": [-90.69645, 19.32645], "zoom":8.0},
+	  {"id": 5, "nombre":"Coahuila", "centro": [-101.89955, 27.20615], "zoom":7.1},
+	  {"id": 6, "nombre":"Colima", "centro": [-104.082, 19.098650000000002], "zoom":9.92},
+	  {"id": 7, "nombre":"Chiapas", "centro": [-92.24405, 16.2379], "zoom":7.9},
+	  {"id": 8, "nombre":"Chihuahua", "centro": [-106.276, 28.684350000000002], "zoom":6.9},
+	  {"id": 9, "nombre":"Ciudad de México", "centro": [-99.15065000000001, 19.32145], "zoom":10.6},
+	  {"id": 10, "nombre":"Durango", "centro": [-104.8665, 24.5884], "zoom":7.4},
+	  {"id": 11, "nombre":"Guanajuato", "centro": [-100.8801, 20.87055], "zoom":8.65},
+	  {"id": 12, "nombre":"Guerrero", "centro": [-100.0703, 17.5986], "zoom":8.3},
+	  {"id": 13, "nombre":"Hidalgo", "centro": [-98.9143, 20.5031], "zoom":8.8},
+	  {"id": 14, "nombre":"Jalisco", "centro": [-103.6335, 20.82415], "zoom":7.7},
+	  {"id": 15, "nombre":"México", "centro": [-99.6012, 19.31625], "zoom":8.7},
+	  {"id": 16, "nombre":"Michoacán", "centro": [-101.9075, 19.14875], "zoom":8.3},
+	  {"id": 17, "nombre":"Morelos", "centro": [-99.0659, 18.7295], "zoom":10.0},
+	  {"id": 18, "nombre":"Nayarit", "centro": [-105.2225, 21.83035], "zoom":8.3},
+	  {"id": 19, "nombre":"Nuevo León", "centro": [-99.79185, 25.469549999999998], "zoom":7.4},
+	  {"id": 20, "nombre":"Oaxaca", "centro": [-96.17575, 17.13075], "zoom":8.1},
+	  {"id": 21, "nombre":"Puebla", "centro": [-97.8555, 19.339750000000002], "zoom":8.1},
+	  {"id": 22, "nombre":"Querétaro", "centro": [-99.81815, 20.844], "zoom":8.92},
+	  {"id": 23, "nombre":"Quintana Roo", "centro": [-88.02935, 19.75365], "zoom":7.81},
+	  {"id": 24, "nombre":"San Luis Potosí", "centro": [-100.28155000000001, 22.8234], "zoom":7.9},
+	  {"id": 25, "nombre":"Sinaloa", "centro": [-107.4425, 24.73675], "zoom":7.4},
+	  {"id": 26, "nombre":"Sonora", "centro": [-111.70949999999999, 29.41095], "zoom":6.9},
+	  {"id": 27, "nombre":"Tabasco", "centro": [-92.53145, 17.943649999999998], "zoom":9.14},
+	  {"id": 28, "nombre":"Tamaulipas", "centro": [-98.6197, 24.9372], "zoom":7.14},
+	  {"id": 29, "nombre":"Tlaxcala", "centro": [-98.16585, 19.41745], "zoom":10.35},		
+	  {"id": 30, "nombre":"Veracruz", "centro": [-96.04905, 19.80275], "zoom":7.28},
+	  {"id": 31, "nombre":"Yucatán", "centro": [-88.95735, 20.58475], "zoom":8.63},
+	  {"id": 32, "nombre":"Zacatecas", "centro": [-102.569, 23.07775], "zoom":7.6}		    	  
+	]
+
+}
+
+
