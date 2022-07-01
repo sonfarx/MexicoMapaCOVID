@@ -11,17 +11,43 @@ require_once("ConstruyeJSON.php");
  $aentidades = ['Estados Unidos Mexicanos', 'Aguascalientes', 'Baja California', 'Baja California Sur', 'Campeche', 'Coahuila', 'Colima', 'Chiapas',
                         'Chihuahua', 'Ciudad de México', 'Durango', 'Guanajuato', 'Guerrero', 'Hidalgo', 'Jalisco', 'México', 'Michoacán', 'Morelos', 'Nayarit',
                         'Nuevo León', 'Oaxaca', 'Puebla', 'Querétaro', 'Quintana Roo', 'San Luis Potosí', 'Sinaloa', 'Sonora', 'Tabasco', 'Tamaulipas', 'Tlaxcala', 'Veracruz', 'Yucatán', 'Zacatecas'];
+  $atotales = obtenDatosTotales(); 
+  $aentpob = $atotales[0];
+  $aentpos = $atotales[1];
+  $aentdef = $atotales[2];
+  $aentsos = $atotales[3];
+  $amujerpos = $atotales[4];
+  $amhompos = $atotales[5];
+  $fechact = $atotales[6];
+  $fechant = $atotales[13];
+  $aentactv_viv = $atotales[7];
+  $aentactv_def = $atotales[8];
+  $anvoentactv_viv = $atotales[9];
+  $anvoentactv_def = $atotales[10];     
+  $anvosentpos = $atotales[11];  
+  $anvosentdef = $atotales[12];     
+  $atotales = null;
+  $atotayer = obtenDatosTotalesAyer();
+  $totposayer = $atotayer[0];
+  $totdefayer = $atotayer[1];
+
   $arrhtmls = glob('./*.html');
+  $archant = "./".$fechant.".html";
+  if(array_search($archant, $arrhtmls) == NULL)
+    array_push($arrhtmls, "./".$fechant.".html");
   rsort($arrhtmls);
   $archivofechas = fopen("./fechas.csv", "w") or die("Incapaz de abrir el archivo");
-  if( $archivofechas ) {
-    fwrite($archivofechas, "fecha\n");
-    for($i = 0; $i < count($arrhtmls); $i++) {
-      $fecha = str_replace(["./", ".html"], "", $arrhtmls[$i])."\n";
-      fwrite($archivofechas, $fecha);
-    }
+  fwrite($archivofechas, "fecha\n");
+  for($i = 0; $i < count($arrhtmls); $i++) {
+    $fecha = str_replace(["./", ".html"], "", $arrhtmls[$i])."\n";
+    fwrite($archivofechas, $fecha);
   }
-    fclose($archivofechas);        
+  fclose($archivofechas);    
+
+  if (file_exists('./index.html') && !file_exists('./'.$fechant.".html")) {
+    rename('./index.html', './'.$fechant.'.html');
+  }
+
  ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -79,30 +105,7 @@ require_once("ConstruyeJSON.php");
     <script src="js/ol.js"></script>
     <script src="js/mapa-ol-covid.js"></script>  
     <script>
-      <?php $atotales = obtenDatosTotales(); 
-            $aentpob = $atotales[0];
-            $aentpos = $atotales[1];
-            $aentdef = $atotales[2];
-            $aentsos = $atotales[3];
-            $amujerpos = $atotales[4];
-            $amhompos = $atotales[5];
-            $fechact = $atotales[6];
-            $fechant = $atotales[13];
-            $aentactv_viv = $atotales[7];
-            $aentactv_def = $atotales[8];
-            $anvoentactv_viv = $atotales[9];
-            $anvoentactv_def = $atotales[10];     
-            $anvosentpos = $atotales[11];  
-            $anvosentdef = $atotales[12];     
-            $atotales = null;
-            $atotayer = obtenDatosTotalesAyer();
-            $totposayer = $atotayer[0];
-            $totdefayer = $atotayer[1];
 
-            if (file_exists('./index.html') && !file_exists('./'.$fechant.".html")) {
-              rename('./index.html', './'.$fechant.'.html');
-            }
-      ?>
       var totposayer = <?= $totposayer; ?>;
       var totdefayer = <?= $totdefayer; ?>;
       var aentidades = [<?= "'".implode("','", $aentidades)."'"; ?>];

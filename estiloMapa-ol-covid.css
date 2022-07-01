@@ -1,0 +1,256 @@
+body {
+    font-family: Helvetica;
+}
+
+.mapacl {
+	width: 90%;
+	height:650px;
+}
+
+.volar-a-cl {
+  /*position: fixed;*/
+
+}
+
+/************* Leyenda de indicadores de color *********************/
+.leyendacl {  
+  display: inline-block;
+
+  position: absolute;
+  margin-left: 7px;
+  margin-top: 168px;
+  padding-top: 15px;
+  padding-bottom: 5px;
+  opacity: 0.8;
+  width: 290px;
+  min-height: 100px;
+  height: auto;
+  background: #F8F8F8;
+  color: #333333;
+  z-index: 10;
+  border-radius: 8px;
+  box-shadow: -3px 4px 6px #555555;
+}
+
+/* Título de leyenda */
+.titulo1leycl {
+  text-align: left;
+  margin-left: 14px;
+  margin-right: 14px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.fechacl {
+  font-size: 12px;
+  font-weight: 700;
+  text-align: left;
+  margin-left: 14px;
+  margin-right: 14px;
+  margin-bottom: 10px;
+}
+
+/* Subtitulo leyenda */
+.subtitulo_1_leycl {
+  padding: 2px;
+  text-align: left;
+  margin-left: 14px;
+  margin-right: 14px;
+  font-size: 12px;
+  margin-bottom: 5px;
+  border: 1px solid #E0E0E0;
+}
+/* Subtitulo leyenda */
+.subtitulo_1_leysxcl {
+  text-align: left;
+  margin-left: 4px;
+  margin-right: 4px;
+  font-family: Verdana;
+  font-size: 12px;
+  font-weight: normal;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.fa-biohazard {
+  padding: 2px;
+  font-size: 14px;
+
+}
+
+.viruscl {  
+  padding: 2px;
+  background: #FFFFFF;
+  color: #FF0000;  
+}
+
+/* Subtitulo leyenda */
+.subtitulo_2_leycl {
+  border: 1px solid #E0E0E0;
+  padding: 2px;
+  text-align: left;
+  margin-left: 14px;
+  margin-right: 14px;
+  font-size: 12px;
+  margin-bottom: 3px;
+}
+
+/* Indicadores de la leyenda */
+.indicadorescl {
+  width: 100%;
+  margin-top: 1px;
+  margin-bottom: -10px;
+}
+
+.rangocl {
+  display: flex;
+  padding-top: 0px;
+  padding-left: 2px;
+
+}
+
+.cuadritocl {
+  width: 10px;
+  height: 10px;
+  margin-left: 12px;
+  margin-right: 14px;
+  /*margin-top: 2px;*/
+  border: 1px solid #000000;
+  background: #17B1A4;
+}
+
+.etiq_cuadritocl {
+  width: 90%;
+  font-size: 11px;
+}
+/********************************/
+
+/******************* Tooltip ******************/
+
+.ol-popup {
+	font-family: Verdana;
+	position: absolute;
+	background-color: #DCDCDC;
+	color: #000000;
+	-webkit-filter: drop-shadow(0 1px 4px rgba(0,0,0,0.7));
+	filter: drop-shadow(0 1px 4px rgba(0,0,0,0.7));
+	padding: 5px;
+	white-space: normal;
+	bottom: 10px;
+	left: -32px;
+	z-index: 3;
+  border-left: 15px solid #9D0404;
+  max-width: 350px;
+}
+
+.entidadcl {
+	font-size: 14px;	
+  font-weight: bold;
+}
+
+.municipiocl {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.entidaddcl {
+  margin-top: 4px;
+  font-size: 11px;
+}
+
+
+.entidadiddcl {
+  font-size: 11px;
+  padding-left: 15px;
+}
+
+
+.valcl {
+  font-size: 11px;
+  font-weight: 500;
+}
+
+     
+
+/************ Tabla tooltip **************/
+div.paleBlueRows {
+  font-family: Arial, Helvetica, sans-serif;
+  border: 1px solid #7F20BC;
+  width: 330px;
+  text-align: left;
+  border-collapse: collapse;
+}
+.divTable.paleBlueRows .divTableCell, .divTable.paleBlueRows .divTableHead {
+  border: 1px solid #AAAAAA;
+  padding: 3px 2px;
+}
+.divTable.paleBlueRows .divTableBody .divTableCell {
+  font-size: 12px;
+}
+.divTable.paleBlueRows .divTableRow:nth-child(even) {
+  background: #E4D0F5;
+}
+.divTable.paleBlueRows .divTableHeading {
+  background: #7F20BC;
+}
+.divTable.paleBlueRows .divTableHeading .divTableHead {
+  font-size: 11px;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-align: left;
+  border-left: 2px solid #E4D0F5;
+  padding: 3px;
+}
+.divTable.paleBlueRows .divTableHeading .divTableHead:first-child {
+  border-left: none;
+}
+
+.paleBlueRows .tableFootStyle {
+  font-size: 12px;
+  font-weight: bold;
+  color: #FFFFFF;
+  background: #52179B;
+  border-top: 2px solid #444444;
+}
+.paleBlueRows .tableFootStyle {
+  font-size: 12px;
+}
+/* DivTable.com */
+.divTable{margin-top: 3px; display: table; }
+.divTableRow { display: table-row; }
+.divTableHeading { display: table-header-group;}
+.divTableCell, .divTableHead {font-size: 11px; display: table-cell;}
+.divTableFoot { display: table-footer-group;}
+.divTableBody { display: table-row-group;}
+
+/********************** Pie de mapa ****************************/
+
+hr {
+  width: 90%;
+  margin-left: 0px;
+
+}
+.mapapie {
+  margin-top: 5px;
+  width: 90%;
+  font-family: Helvetica;
+  font-size: 11px;
+  display: flex;
+}
+
+.selectcl {
+  width: 200px;
+  margin-right: 10px;
+}
+
+.inputscl {
+  display: inline-flex;
+}
+.chkcl {
+  width: 140px;
+}
+
+.notascl {
+
+}
